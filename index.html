@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="containerMenu">
+            <nav class="menu" id="inicio">
+                <a href="#" id="btn-inicio">Inicio</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a href="#" id="btn-ubicacion">Ubicación y contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="principal" >
+            <div class="titulo">
+                <h1 class="tituloPrincipal" data-aos="fade-right" data-aos-duration="2000"><span>L</span>a mesa</h1>
+            <p class="subtituloPrincipal" data-aos="fade-left" data-aos-duration="2000">Welcome</p>
+            </div>
+        </section>
+        <div class="linea"></div>
+    </div>
+
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="tituloGaleria" data-aos="fade-down-right" data-aos-duration="2000">
+                <h2 class="tituloGaleriaCentral"><span>C</span>onoce más de ellas</h2>
+                <p class="informacionGaleria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat es officia?</p>
+            </div>
+
+            <div class="imagenesGaleria" data-aos="fade-down-left" data-aos-duration="2000">
+                <div class="foto">
+                    <img src="img/img-1.jpg" alt="">
+                </div>
+
+                <div class="foto">
+                    <img src="img/img-2.jpg" alt="">
+                </div>
+
+                <div class="foto">
+                    <img src="img/img-3.jpg" alt="">
+                </div>
+
+                <div class="foto">
+                    <img src="img/img-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ubicacion" id="ubicacion">
+        <h3 class="titulo" data-aos="flip-left" data-aos-duration="2500">Ubicación</h3>
+
+        <div class="container">
+            <div class="direccion">
+                <h4>Dirección y contacto</h4>
+                <p class="calle"><i class="fas fa-location-arrow"></i> Lorem ipsum dolor 1938, Lorem</p>
+                <p class="telefono"><i class="fas fa-mobile-alt"></i> (+56)9 0000 0000</p>
+                <p class="correo"><i class="far fa-envelope"></i> correo@correo.com</p>
+            </div>
+
+            <div class="horario">
+                <h4>Horario</h4>
+                <p class="entre-semana">Lunes a Viernes <br> 00:00am - 00:00pm</p>
+                <p class="fin-semana">Sábados y Domingos <br> 00:00am - 00:00pm</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="cp">
+                    <p>Copyright Matías Rojas Rojas - maigrojas.dev@gmail.com @2020</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function() {
+                var maxWidth = 1200;
+                return window.innerWidth < maxWidth;
+            }
+});
+    </script>
+</body>
+</html>

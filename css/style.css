@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/mesa-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.linea{
+    border-bottom: .5px solid #f2f2f2;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1000;
+}
+/*Header*/
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header .menu{
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a{
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration:none ;
+    margin: 40px 30px;
+    border-bottom: 1px solid transparent;
+}
+
+header .menu a:hover{
+    border-bottom: 1px solid #f2f2f2;
+    transition-duration: .3s;
+}
+
+/*Header*/
+
+/*Fondo principal*/
+.principal{
+    text-align: center;
+}
+
+.principal .titulo .tituloPrincipal{
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 1px solid black  ;
+    font-size: 80px;
+    font-family: 'Parisienne', cursive;
+    color: rgb(24, 13, 1);
+    margin-bottom:30px
+}
+
+.principal .titulo .tituloPrincipal span{
+    font-size: 100px;
+}
+
+.principal .titulo .subtituloPrincipal{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+/*Fondo principal*/
+
+/*Galeria*/
+.galeria{
+    background: rgba(0, 0, 0, 0.39);
+}
+
+.galeria .foto{
+    width: 25%;
+    float: left;
+}
+
+.galeria .foto img{
+    width: 100%;
+    vertical-align: top;
+    opacity: .9;
+}
+
+.galeria .foto:hover img{
+    opacity: 1;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.galeria .container .tituloGaleria{
+    text-align: center;
+}
+
+.tituloGaleria .tituloGaleriaCentral{
+    margin-right: 20px;
+    color: white;
+    width: 400px;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.informacionGaleria{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: bold;
+    color: rgba(255, 255, 255, 0.582);
+}
+/*Galeria*/
+
+
+/*Ubicación*/
+
+.ubicacion{
+    background: rgba(0, 0, 0, 0.39);
+    padding-top: 100px;
+}
+
+.ubicacion .titulo{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.ubicacion .direccion{
+    float: left;
+    width: 50%;
+    text-align: left;   
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+.ubicacion .horario{
+    float: right;
+    width: 50%;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+
+.ubicacion .direccion h4,
+.ubicacion .horario h4{
+    font-size: 30px;
+    font-size: 300;
+    text-align: center;
+    color: white;
+}
+
+.ubicacion .direccion p,
+.ubicacion .horario p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: bold;
+    color: rgba(255, 255, 255, 0.582);
+    letter-spacing: 3px;
+}
+/*Ubicación*/
+
+/*Footer*/
+footer{
+    background: black;
+}
+
+.footer .container{
+    height: 40px;
+}
+
+footer .cp{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/*Footer*/
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        z-index: -1;
+        position: relative;
+    }
+    .aos-animate, .aos-init{
+        z-index: 0;
+    }
+    .galeria .container{
+        display: block;
+        margin: 0 auto;
+    }
+    .galeria .foto{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .menu{
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .tituloGaleria{
+        width: 100%;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .ubicacion{
+        padding-top: 1000px;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .container{
+        width: 100%;
+        z-index: -1;
+        position: relative;
+    }
+
+    .menu{
+        background: rgb(0, 0, 0);
+    }
+
+    header .menu a{
+        color: white;
+        font-size: 15px;
+        padding: 40px 10px;
+        margin: 0;
+    }
+
+    footer{
+        background: black;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .footer .container{
+        height: auto;
+    }
+    
+    footer .cp{
+        color: white;
+        text-align: center;    }
+}
+
+@media screen and (max-width: 380px){
+    .tituloGaleria .tituloGaleriaCentral{
+        width: 100%;
+    }
+    header .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu a{
+        color: white;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 0;
+    }
+}
